@@ -1,0 +1,40 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  padding: 30px;
+  background-color: rgb(72, 173, 255);
+  font-family: Arial, Calibri;
+  color: brown;
+}
+h1 {
+  color: rgb(250, 150, 0);
+  background-color: orange;
+  margin-bottom: 15px;
+  font-family: Calibri, Times;
+}
+h6{
+  margin-left: 10px;
+}
+p {
+  margin-left: 10px;
+}
+ul{
+  margin-left: 30px;
+}
+ol{
+  margin-left: 30px;
+}
+a:link {
+
+}
+a:visited {
+
+}
+a:hover{
+
+}
+a:active {
+  
+}
