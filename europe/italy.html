@@ -3,27 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>Pizza :)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </head>
   <body>
+
     <a href="index.html">Back</a>
-    <h1>Italy</h1>
-    <p>We struck Italy in the middle of a heatwave, yet still loved exploring the famous sights.</p>
+    <div class="header">
+      <h1>Italy</h1>
+      <p class="headingp">We struck Italy in the middle of a heatwave, yet still loved exploring the famous sights.</p>
+    </div>
+    <div class="container">
+
+    </div>
     <h3>Venice</h3>
     <img src="images/venice.jpg" alt="Venice Image">
+    <p class="caption">Venice Canals at sunset</p>
     <p>Venice, while crowded with tourists and a little smelly in places, is still an amazing place to visit. <br> You need to get yourself lost in all the narrow streets and canals, and enjoy the hospitality of those few locals still left living on the island. </p>
     <h3>Amalfi</h3>
     <img src="images/amalfi.jpg" alt="Amalfi Image">
+    <p class="caption">Seaside view of Amalfi</p>
     <p>Amalfi is another one of those famous places you will see in thousands of photos but still have your breath taken away when you experience it first-hand. <br> Another thing that can take your breath away is the insanely crowded, narrow and winding roads! Still, it is so beautiful that it is worth the driving stress.</p>
     <h3>Leaning Tower of Pisa</h3>
     <img src="images/pisa.jpg" alt="Pisa Image">
+    <p class="caption">Leaning Pisa Tower during day</p>
     <p>Marvel at all the tourists taking the obligatory photo of themselves "holding up" the famous tower! <br> Interestingly, there was a failed terrorist plot to topple the tower the same day we were visiting.</p>
     <h2>Rome</h2>
     <p>What would any trip to Italy be without a visit to the Eternal City, Rome?</p>
     <img src="images/coliseum.jpg" alt="Coliseum Image">
+    <p class="caption">Coliseum Ruins</p>
     <p>The Coliseum is one of the most iconic sights in the world, and you feel like you have travelled back in time when you stand inside the towering stadium.</p>
     <img src="images/forum.jpg" alt="Forum Image">
+    <p class="caption">Drone view of Forum</p>
     <p>The Forum was the heart of Rome. There isn't much still standing today, but there are still plenty of intact ruins to give you an idea of the scale of it. </p>
-    <img src="images/panthenon.jpg" alt="Panthenon Image">
+    <img src="images/pantheon.jpg" alt="Pantheon Image">
+    <p class="caption">Pantheon entrance</p>
     <p>The Pantheon is so big that when standing inside it is hard to get a grasp of its sheer size. The oculus lets in a dazzling beam of light.</p>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   </body>
 </html>
