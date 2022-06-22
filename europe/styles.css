@@ -1,0 +1,114 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  padding: 30px;
+  font-family: Arial, Calibri;
+  color: blue;
+  /* margin: top right bottom left */
+  margin: 20px 0px 5px 0px;
+}
+h1 {
+  margin-left: 5px;
+  color: rgb(250, 150, 0);
+  font-family: Calibri, Times;
+}
+h2{
+  margin-left: 5px;
+  margin-top: 20px;
+  color: rgb(250, 150, 0);
+  font-style: underline;
+}
+h3{
+  margin-left: 5px;
+  margin-top: 20px;
+  color: rgb(250, 150, 0);
+}
+h6{
+  margin-left: 10px;
+}
+p {
+  margin-left: 10px;
+}
+ul{
+  margin-left: 30px;
+}
+/* Captions */
+.caption{
+  color: rgba(214, 214, 214, 0.5);
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.topHeading{
+  margin-top: 1px;
+  color: rgb(250, 150, 0);
+}
+
+.homelink{
+  color: green;
+  margin-left: 10px;
+}
+
+.header{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+
+.card{
+  border: rgb(196, 255, 255) 10px solid;
+  border-radius: 10px;
+  background-color: rgb(196, 255, 255);
+}
+
+.card img{
+  max-width: 100%;
+}
+
+.headingp{
+  color: black;
+}
+
+.breakpoint{
+  color: black;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+ol{
+  margin-left: 30px;
+}
+
+/* While mouse cursor is over link */
+a:hover{
+  color: red;
+}
+/* While being clicked */
+a:active {
+  color: purple;
+}
+
+@media only screen and (max-width: 900px) {
+  .container{
+    grid-template-columns: 1fr
+  }
+  .countryList{
+    border: rgb(196, 255, 255) 1px solid;
+    background-color: rgb(196, 255, 255);
+    border-radius: 15px;
+  }
+  .breakpoint{
+    color: blue;
+  }
+}
